@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ForkScript : MonoBehaviour
 {
-
+    public GameObject baloon;
+    private Animator BaloonAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,9 @@ public class ForkScript : MonoBehaviour
     {
         if (col.gameObject.name == "baloon")
         {
-            Debug.Log("Collided fork with baloons.");
+            // Debug.Log("Collided fork with baloons.");
+            BaloonAnimator = baloon.GetComponent<Animator>();
+            BaloonAnimator.SetBool("isActive", true);
         }
     }
 }
