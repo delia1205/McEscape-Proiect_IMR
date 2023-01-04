@@ -5,6 +5,7 @@ using UnityEngine;
 public class ForkScript : MonoBehaviour
 {
     public GameObject baloon;
+    public GameObject key;
     private Animator BaloonAnimator;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,8 @@ public class ForkScript : MonoBehaviour
             // Debug.Log("Collided fork with baloons.");
             BaloonAnimator = baloon.GetComponent<Animator>();
             BaloonAnimator.SetBool("isActive", true);
+
+            key.SetActive(true);
         }
     }
 }
