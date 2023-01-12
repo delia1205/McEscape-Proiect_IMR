@@ -11,8 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/McEscape Scene.unity
     guid: ab8356da829e89e438910f0bd4f0f8ba
+  - enabled: 1
+    path: Assets/Scenes/McEscape Exit.unity
+    guid: 285a4e1fc01fb5c41852557281e70750
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2a2a55c983ee9cd4c9bf00cb2ed1e012, type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: d71c4a9a1bd83f942af6420194d5b747, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c587df064c21071429c366716be40426, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 25cbc79056e250b468a585986be4ac63, type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: a29407d791b96b941b399f84f6d200ee, type: 2}

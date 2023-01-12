@@ -9,6 +9,9 @@ public class KeyScript : MonoBehaviour
     public GameObject book;
     private Animator BookAnimator;
 
+    public AudioSource lockerUnlockedSound;
+    public AudioSource bookFlippingSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +35,12 @@ public class KeyScript : MonoBehaviour
         {
             LockerAnimator = locker.GetComponent<Animator>();
             LockerAnimator.SetBool("isActive", true);
+            lockerUnlockedSound.Play();
             wait(3);
             BookAnimator = book.GetComponent<Animator>();
             BookAnimator.SetBool("isActive", true);
+            wait(2);
+            bookFlippingSound.Play();
         }
     }
 }

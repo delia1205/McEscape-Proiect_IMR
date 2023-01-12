@@ -7,6 +7,10 @@ public class ForkScript : MonoBehaviour
     public GameObject baloon;
     public GameObject key;
     private Animator BaloonAnimator;
+
+    public AudioSource balloonPopSound;
+    public AudioSource keysDroppedSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +30,16 @@ public class ForkScript : MonoBehaviour
             // Debug.Log("Collided fork with baloons.");
             BaloonAnimator = baloon.GetComponent<Animator>();
             BaloonAnimator.SetBool("isActive", true);
+            balloonPopSound.Play();
 
+            Wait(3f);
             key.SetActive(true);
+            keysDroppedSound.Play();
         }
+    }
+
+    IEnumerator Wait(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
     }
 }
