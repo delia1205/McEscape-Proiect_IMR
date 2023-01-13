@@ -32,7 +32,7 @@ public class ForkScript : MonoBehaviour
             BaloonAnimator.SetBool("isActive", true);
             balloonPopSound.Play();
 
-            Wait(3f);
+            Wait(7f);
             key.SetActive(true);
             keysDroppedSound.Play();
         }

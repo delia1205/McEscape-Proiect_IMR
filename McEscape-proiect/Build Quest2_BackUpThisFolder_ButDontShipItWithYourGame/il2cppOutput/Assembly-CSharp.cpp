@@ -2131,9 +2131,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ForkScript_OnCollisionEnter_mCE7FD1E5475
 		AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* L_8 = __this->___balloonPopSound_7;
 		NullCheck(L_8);
 		AudioSource_Play_m95DF07111C61D0E0F00257A00384D31531D590C3(L_8, NULL);
-		// Wait(3f);
+		// Wait(7f);
 		RuntimeObject* L_9;
-		L_9 = ForkScript_Wait_m8DCDF09E703964D4F65916F2E3250DE9921BC56D(__this, (3.0f), NULL);
+		L_9 = ForkScript_Wait_m8DCDF09E703964D4F65916F2E3250DE9921BC56D(__this, (7.0f), NULL);
 		// key.SetActive(true);
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = __this->___key_5;
 		NullCheck(L_10);
